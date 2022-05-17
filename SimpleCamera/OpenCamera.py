@@ -6,7 +6,7 @@ def show_cam():
     while True :
         return_val, frame = video.read() # read function returns to out , only fram is useful here
         cv.imshow("iKurious-EYE", frame)
-        if cv.waitKey(1) == ord('q'):
+        if cv.waitKey(1) % 256 == 27:  # ESC code 
             break
     video.release()
     cv.destroyAllWindows()
