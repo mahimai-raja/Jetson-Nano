@@ -2,7 +2,10 @@ import cv2 as cv
 import os
 
 cur_dir = os.getcwd()
-
+faces_path = os.path.join(cur_dir,'data/faces')
+if not os.path.exists(faces_path):
+    os.makedirs(faces_path)
+    
 n = int(input("Enter the number of peoples to be added : \n"))
 face_detector = cv.CascadeClassifier('cascade.xml')
 for i in range(n):
