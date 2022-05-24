@@ -1,7 +1,5 @@
-from re import A
 import cv2 as cv
 import numpy as np
-from scipy.misc import face
 from tensorflow.keras.models import model_from_json
 
 prediction_dict = {0:'Angry',
