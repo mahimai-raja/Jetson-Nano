@@ -1,4 +1,6 @@
 # Jetson-Nano
+  
+  Perfect choice to start on AI
 
   To start your carrer in Artificial Intelligence, Jetson nano is the perfect choice
   
